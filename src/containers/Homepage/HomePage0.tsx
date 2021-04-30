@@ -1,7 +1,10 @@
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Arthur from "../../assets/Aurthur.png";
 import Button from "../../components/Button";
+import Card from "../../components/Card/Card";
+import Sally10 from "../../assets/Saly-10.png";
+import Sally13 from "../../assets/Saly-13.png";
+import Sally12 from "../../assets/Saly-12.png";
 
 const HomePageSm = ({ messageText }: { messageText: string }) => {
   return (
@@ -50,19 +53,14 @@ const HomePageSm = ({ messageText }: { messageText: string }) => {
           </span>
         </div>
 
-        <section className="mt-7 flex flex-col items-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          cumque dolore beatae quia, cupiditate delectus reprehenderit debitis
-          quod ex harum nobis, rem distinctio, ullam nam neque illum fugit et
-          omnis.
+        <section className="mt-7 space-y-8 flex flex-col items-center">
+          <Card imageSrc={Sally10} cardTitle="lorem" />
+          <Card imageSrc={Sally13} cardTitle="lorem" />
+          <Card imageSrc={Sally12} cardTitle="lorem" />
         </section>
       </section>
     </>
   );
-};
-
-HomePageSm.propTypes = {
-  messageText: PropTypes.string.isRequired,
 };
 
 export default HomePageSm;
