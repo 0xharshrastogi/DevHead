@@ -1,6 +1,6 @@
 {
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-  "liveSassCompile.settings.includeItems": ["/src/scss"],
+  // "liveSassCompile.settings.includeItems": ["/src/scss/**"],
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",

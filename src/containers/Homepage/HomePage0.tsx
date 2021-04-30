@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import Arthur from "../../assets/Aurthur.png";
+import Button from "../../components/Button";
 
 const HomePageSm = ({ messageText }: { messageText: string }) => {
   return (
     <>
-      <h3 className="my-5 text-center font-bold page_title">DevHead</h3>
+      <h3 className="my-5 text-center font-bold page_title max-h-full">
+        DevHead
+      </h3>
       <section className="hero sm:grid grid-cols-2">
         <section className="px-9 flex overflow-hidden mb-6 hero__greet">
           <img
@@ -20,6 +24,37 @@ const HomePageSm = ({ messageText }: { messageText: string }) => {
         </section>
         <section className="hero__greet_message-gradient-bg">
           <p className="px-9 py-5">{messageText}</p>
+        </section>
+      </section>
+
+      <div className="flex gap-5 my-10 px-9">
+        <Link className="flex-1" to="/joinus">
+          <Button className="text-white w-full" varient="gradient2">
+            Join Us
+          </Button>
+        </Link>
+        <Link className="flex-1" to="/events">
+          <Button className="w-full" varient="grey">
+            Events
+          </Button>
+        </Link>
+      </div>
+
+      <section className="px-9" data-role="section2">
+        <div className="mt-5 text-center">
+          <h2 className="font-bold text-2xl mb-5 mt-16 text-gray-700 ">
+            How Your Club Works
+          </h2>
+          <span className="text-gray-400">
+            Great things are done by a series of small things brought together.
+          </span>
+        </div>
+
+        <section className="mt-7 flex flex-col items-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          cumque dolore beatae quia, cupiditate delectus reprehenderit debitis
+          quod ex harum nobis, rem distinctio, ullam nam neque illum fugit et
+          omnis.
         </section>
       </section>
     </>

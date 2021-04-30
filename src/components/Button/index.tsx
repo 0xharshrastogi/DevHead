@@ -27,6 +27,15 @@ const Button: React.FC<Props> = ({ children, varient, className, ...rest }) => {
           {children}
         </button>
       );
+    case "gradient2":
+      return (
+        <button
+          className={`btn rounded-md ease-in btn__grad-2 ${className ?? ""}`}
+          {...rest}
+        >
+          {children}
+        </button>
+      );
     default:
       return (
         <button className={className} {...rest}>
