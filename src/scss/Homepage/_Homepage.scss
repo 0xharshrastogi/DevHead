@@ -1,0 +1,51 @@
+@import "../../scss//basic/variable";
+@import "../../scss//basic/typography";
+
+.page_title {
+  color: $blue;
+  font-size: calc(2.25rem + 3vw);
+}
+
+.linear_gradient_title {
+  background: -webkit-linear-gradient(122deg, $green, $cyan);
+  // --webkit-background-clip: text;
+  // --webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+}
+
+.hero {
+  &__greet {
+    color: $black;
+    h3 {
+      line-height: 1;
+      font-size: calc(2.25rem + 1.5vw);
+      margin-top: calc(1.25rem + 4vw);
+    }
+    span {
+      @extend .linear_gradient_title;
+    }
+
+    @media (min-width: 640px) {
+      img {
+        min-width: 200px;
+      }
+    }
+  }
+
+  &__greet_message {
+    h3 {
+      color: $black;
+    }
+    span {
+      @extend .linear_gradient_title;
+    }
+
+    @extend .typography;
+    color: rgba($color: $black, $alpha: 0.75); // color: $black;
+    &-gradient-bg {
+      color: #fff;
+      background: linear-gradient(90deg, $blue, $cyan);
+    }
+  }
+}

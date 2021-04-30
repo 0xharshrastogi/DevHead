@@ -1,0 +1,39 @@
+@import "../basic/variable";
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  svg {
+    color: $black;
+  }
+
+  &__title {
+    color: $blue;
+  }
+
+  &__item {
+    transition: all 250ms ease;
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+
+.btn {
+  padding: 0.5rem;
+  font-weight: 500;
+
+  &__join_us {
+    background: linear-gradient(43deg, $blue, $cyan);
+    color: #fff;
+    transition-duration: 400ms;
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: 200ms;
+    }
+  }
+}
