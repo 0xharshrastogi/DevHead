@@ -1,4 +1,4 @@
-@import './variable';
+@import "./variable";
 
 html {
   scroll-behavior: smooth;
@@ -6,7 +6,26 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   letter-spacing: 0.025em;
+}
+
+::-webkit-scrollbar {
+  background-color: blue;
+  width: 20px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: $blue;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffffbe;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fff;
 }

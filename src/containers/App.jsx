@@ -8,6 +8,7 @@ import JoinUs from "./JoinUs/JoinUs";
 import HomePage from "./Homepage/index";
 import useViewportWidth from "../hooks/useViewportWidth";
 import { WindowContext } from "../context/index";
+import Footer from "../components/Footer/Footer";
 
 const App = () => {
   const viewportWidth = useViewportWidth();
@@ -33,6 +34,7 @@ const App = () => {
             <HomePage />
           </Route>
         </Switch>
+        <Footer />
       </WindowContext.Provider>
     </>
   );
