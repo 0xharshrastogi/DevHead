@@ -52,7 +52,7 @@ const HomePageMd = ({ messageText }: { messageText: string }) => {
               </span>
             </div>
           </div>
-          <section className="flex gap-10">
+          <section className="flex gap-20">
             <Card imageSrc={Sally10} cardTitle="Enthusiastic People" />
             <Card imageSrc={Sally13} cardTitle="Local Support" />
             <Card imageSrc={Sally12} cardTitle="Free Resource" />

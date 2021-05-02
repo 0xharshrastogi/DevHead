@@ -10,7 +10,10 @@ const Card = (props: Props) => {
   const { imageSrc, cardTitle } = props;
 
   return (
-    <div className="border-2 bg-white transition-shadow border-gray-50 rounded-lg p-2 w-full max-w-xs card">
+    <div
+      style={{ minWidth: "250px" }}
+      className="border-2 bg-white transition-shadow border-gray-50 rounded-lg p-2 w-full max-w-xs card"
+    >
       <div className="card__image_wrapper">
         <img src={imageSrc} alt={cardTitle} className="mx-auto card__image" />
       </div>
