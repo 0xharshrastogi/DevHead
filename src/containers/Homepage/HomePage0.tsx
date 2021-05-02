@@ -54,9 +54,9 @@ const HomePageSm = ({ messageText }: { messageText: string }) => {
         </div>
 
         <section className="mt-7 space-y-8 flex flex-col items-center">
-          <Card imageSrc={Sally10} cardTitle="lorem" />
-          <Card imageSrc={Sally13} cardTitle="lorem" />
-          <Card imageSrc={Sally12} cardTitle="lorem" />
+          <Card imageSrc={Sally10} cardTitle="Enthusiastic People" />
+          <Card imageSrc={Sally13} cardTitle="Local Support" />
+          <Card imageSrc={Sally12} cardTitle="Free Resource" />
         </section>
       </section>
     </>

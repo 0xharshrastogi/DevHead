@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import Card from "../../components/Card/Card";
 import Button from "../../components/Button";
+import Sally10 from "../../assets/Saly-10.png";
+import Sally13 from "../../assets/Saly-13.png";
+import Sally12 from "../../assets/Saly-12.png";
 import Arthur from "../../assets/Aurthur.png";
 
 const HomePageMd = ({ messageText }: { messageText: string }) => {
@@ -29,6 +32,32 @@ const HomePageMd = ({ messageText }: { messageText: string }) => {
             </div>
           </section>
         </section>
+      </section>
+
+      <section
+        style={{
+          background:
+            "linear-gradient(266.51deg, #70FFAE -6.56%, #0540F2 56.71%, #0FF2F2 110.25%)",
+          backgroundBlendMode: "darken",
+        }}
+        className="min-h-screen grid place-items-center bg-gradient-to-r from-blue-500 to-green-400 text-white"
+      >
+        <div className="flex flex-col gap-7">
+          <div className="mb-16">
+            <div className="text-center">
+              <h2 className="font-bold text-7xl">How Our Club Works</h2>
+              <span className="text-xl opacity-40">
+                Great things are done by a series of small things brought
+                together
+              </span>
+            </div>
+          </div>
+          <section className="flex gap-10">
+            <Card imageSrc={Sally10} cardTitle="Enthusiastic People" />
+            <Card imageSrc={Sally13} cardTitle="Local Support" />
+            <Card imageSrc={Sally12} cardTitle="Free Resource" />
+          </section>
+        </div>
       </section>
     </>
   );
